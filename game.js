@@ -252,6 +252,7 @@ function gameLoopStructure(){
 }
 
 function gameLoop(){
+  prompt()
   //Clear
 
   //check for input
