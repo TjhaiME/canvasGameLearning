@@ -10,6 +10,7 @@ export default class Player {
         //this.myImg = new Image();
         this.initialPos = [x,y]
         document.addEventListener("keydown", this.#keydown)
+        document.addEventListener("click", this.#clicked)
         //document.addEventListener("keydown", this.#keydown(event))
     }
 
@@ -51,14 +52,15 @@ export default class Player {
         if(event.keyCode == 39){
             buttonPress[0] += 1
         }
-      
         // if(buttonPress[0] == 0 && buttonPress[1] == 0){
         //   return
         // }
         this.x += buttonPress[0]
         this.y += buttonPress[1]
     }
-    
+    #clicked = (event)=>{
+        event.focus()
+    }
     // #move(){
     //     this.x += buttonPress[0]
     //     this.y += buttonPress[1]
