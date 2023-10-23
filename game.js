@@ -252,7 +252,7 @@ function gameLoopStructure(){
 }
 
 function gameLoop(){
-  prompt()
+  focus()
   //Clear
 
   //check for input
